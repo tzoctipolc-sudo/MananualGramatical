@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Calculadora basica</title>
+
+<style>
+
+body{
+background:#0f1118;
+display:flex;
+justify-content:center;
+aling-items:center;
+height:100vh;
+margin:0;
+font-family:Arial;
+}
+
+.calculadora{
+width:340px;
+padding:20px;
+<center></center>
+}
+
+h1{
+color:#ff2d55
+text-aling:center;
+margin-bottom:20px;
+font-size.40px;
+}
+
+pantalla{
+width:300%;
+height:120px;
+background:none;
+border:none;
+color:white;
+font-size:55px;
+text-aling:right;
+outline:none;
+}
+
+.botones{
+display:grid;
+grid-template-columns:
+repeat(4,1fr);
+gap:15px;
+}
+
+button{
+
+height:75px;
+
+width:75px;
+
+border-radius:50%;
+
+border:none;
+
+font-size:30px;
+}
+
+.numero{
+
+background:#2a2d37;
+color:white;
+}
+
+.operador{
+background:#bcc2e3;
+}
+
+.igual{
+
+background:#d8b5da;
+}
+
+.ac{
+background:390a4e5;
+}
+</style>
+</head>
+</body>
+
+<div class="calculadora">
+<h1>Calculadora Basica </h1>
+
+<center><input
+id="pantalla"
+reandonly></center><br><br><br>
+
+
+<div class="botones">
+<button class="ac"
+onclick="borrarTodo()">AC</button>
+
+<button class="operador"
+onclick="agregar('(')">(</button>
+
+<button class="operador"
+onclick="agregar(')')">)</button>
+
+<button class="operador"
+onclick="agregar('%')">%</button>
+
+<button class="operador"
+onclick="agregar('/')">÷</button>
+
+
+<button class="numero"
+onclick="agregar('7')">7</button>
+
+<button class="numero"
+onclick="agregar('8')">8</button>
+
+<button class="numero"
+onclick="agregar('9')">9</button>
+
+<button class="operador"
+onclick="agregar('*')">×</button>
+
+
+<button class="numero"
+onclick="agregar('4')">4</button>
+
+<button class="numero"
+onclick="agregar('5')">5</button>
+
+<button class="numero"
+onclick="agregar('6')">6</button>
+
+<button class="operador"
+onclick="agregar('-')">-</button>
+
+<button class="numero"
+onclick="agregar('1')">1</button>
+
+<button class="numero"
+onclick="agregar('2')">2</button>
+
+<button class="numero"
+onclick="agregar('3')">3</button>
+
+<button class="operador"
+onclick="agregar('+')">+</button>
+
+
+<button class="numero"
+onclick="agregar('0')">0</button>
+
+<button class="numero"
+onclick="agregar('.')">.</button>
+
+<button class="numero"
+onclick="borrar()">⌫</button>
+
+<button class="igual"
+onclick="calcular()">=</button>
+
+</div>
+
+</div>
+
+<script>
+
+function agregar(valor){
+pantalla.value+=valor
+}
+
+function borrar(){
+pantalla.value=
+pantalla.value.slice(0,-1)
+}
+
+function borrarTodo(){
+pantalla.value=""
+}
+
+function calcular(){
+try{
+
+pantalla.value=
+eval(
+pantalla.value
+)
+
+}
+
+catch{
+
+pantalla.value=
+"Error"
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
+

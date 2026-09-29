@@ -1,0 +1,44 @@
+
+  nav {
+      width:100%;
+      text-align: center;
+      background-color:Blue;
+        }
+   nav a{
+       display: inline-block;
+       margin: 5px;
+       padding: 12px 20px;
+       background-color:#01026E;
+       color:white;
+       font-family:Times new roman, sans-serif;
+       font-size: 1.4em;
+       text-decoration: none;
+       border-radius: 20px;
+       transition: background-color 0.10s, color 0.s;
+        }
+
+nav a:hover{
+          color:white;
+          background-color:#00023D;
+           }  
+
+   label {
+        padding:30px;
+        font-size: 2em
+         } 
+   body {
+        background-image:url(img/cff3.jpg);
+        background-attachment:fixed;
+        background-size:cover;
+        background-repeat:no repeat;
+        background-position: center;
+        }  
+   section {
+           background-color:;             
+           width:60%;
+           margin:auto;
+           margin-top:200gpx;g
+           text-aling: justify;
+           font-size: 1.5em;
+           } 
+
